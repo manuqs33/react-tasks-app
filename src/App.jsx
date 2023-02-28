@@ -15,8 +15,13 @@ function App() {
   }, [])
 
   function createTask(task) {
-    const newtasks = [...tasks, task]
-    setTasks(newtasks)
+    const newTask = {
+      id: tasks.length,
+      title: task.title,
+      description: task.description
+    }
+    const newTasks = [...tasks, newTask]
+    setTasks(newTasks)
   }
 
   return (
