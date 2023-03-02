@@ -19,6 +19,7 @@ export default function TaskForm({ createTask }) {
                 <label htmlFor="" className="label">Task Name</label>
                 <div className="control">
                     <input
+                        className='input'
                         type="text"
                         onChange={(e) => setTitle(e.target.value)}
                         placeholder="Write down your task"
@@ -28,16 +29,17 @@ export default function TaskForm({ createTask }) {
             <div className="field">
                 <label htmlFor="" className="label">Description</label>
                 <div className="control">
-                    <textarea name="description-text" cols="30" rows="5"
+                    <textarea
+                        className='textarea'
+                        name="description-text" cols="30" rows="5"
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder="Write down your description"
                     />
                 </div>
             </div>
-            <button>
+            <button className='button'>
                 Save
             </button>
-
         </form >
     )
 }

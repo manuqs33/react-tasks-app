@@ -1,27 +1,21 @@
+$green: #006a6e;
+$khaki: #B5AA9D;
+$ash: #B9B7A7;
+$footer-background-color: $green;
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
@@ -37,9 +31,22 @@ h1 {
   line-height: 1.1;
 }
 
-$green: #006a6e;
-$khaki: #B5AA9D;
-$ash: #B9B7A7;
+form.box {
+  .button {
+    background-color: $green;
+    color: whitesmoke;
+  }
+}
+
+section {
+  background-color: $ash;
+}
+
+.footer {
+  background-color: #006a6e;
+}
+
+
 /* #006a6e my green */
 /* B5AA9D khaki */
 /* B9B7A7 ash grey */
