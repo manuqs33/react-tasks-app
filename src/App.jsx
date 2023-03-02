@@ -1,6 +1,6 @@
 import { useImperativeHandle, useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import './App.scss'
 import TaskList from './TaskList'
 import TaskForm from './TaskForm'
 import { tasks as data } from './tasks'

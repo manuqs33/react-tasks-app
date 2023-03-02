@@ -14,24 +14,30 @@ export default function TaskForm({ createTask }) {
     }
 
     return (
-
-        <form onSubmit={handleSubmit} method="post">
-            <div className="columns">
-                <div className="column">
+        <form className="box" onSubmit={handleSubmit} method="post">
+            <div className="field">
+                <label htmlFor="" className="label">Task Name</label>
+                <div className="control">
                     <input
                         type="text"
                         onChange={(e) => setTitle(e.target.value)}
                         placeholder="Write down your task"
                     />
-                    <textarea name="description-text" cols="20" rows="5"
+                </div>
+            </div>
+            <div className="field">
+                <label htmlFor="" className="label">Description</label>
+                <div className="control">
+                    <textarea name="description-text" cols="30" rows="5"
                         onChange={(e) => setDescription(e.target.value)}
                         placeholder="Write down your description"
                     />
-                    <button>
-                        Save
-                    </button>
                 </div>
             </div>
+            <button>
+                Save
+            </button>
+
         </form >
     )
 }
